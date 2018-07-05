@@ -1,0 +1,291 @@
+date,level,applicationName,instanceId,eventTickCount,eventId,pid,tid,message,activityId
+2018-07-05T07:06:39,Error,thle0507ui999inte,a38ce1,636663711991617728,0,7764,1,"EPiServer.Framework.Cache.ObjectInstanceCacheExtensions : Failed to Read cacheKey = 'EP:ECF:MC:N_CatalogEntry'
+System.Data.SqlClient.SqlException (0x80131904): The server principal ""epiuser"" is not able to access the database ""Carpetright.Storefront.Commerce"" under the current security context.
+Cannot open database ""Carpetright.Storefront.Commerce"" requested by the login. The login failed.
+Login failed for user 'epiuser'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Mediachase.Data.Provider.TransactionScope.OpenConnection(IDbCommand cmd, String connectionString, ConnectionDelegate connectionFactory)
+   at Mediachase.Data.Provider.SqlDataProvider.LoadTable(DataCommand command)
+   at Mediachase.MetaDataPlus.Common.DBHelper.ExecuteDataTable(String connectionString, CommandType commandType, String commandText, Int32 commandTimeout, DataParameter[] commandParameters)
+   at Mediachase.MetaDataPlus.Configurator.MetaDataPlusDatabase.StoredProcedure.ExecuteDataTable(MetaDataContext context)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.LoadFromDb(MetaDataContext context, Func`2 dbLoader)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+ClientConnectionId:c6be7d2a-049d-4a69-a1f3-76497ade8202
+Error Number:916,State:1,Class:14
+ClientConnectionId before routing:715cd940-3231-41be-849d-7ac4925959d6
+Routing Destination:a8fe3aacf1ee.tr4.northeurope1-a.worker.database.windows.net,11108",
+2018-07-05T07:06:39,Error,thle0507ui999inte,a38ce1,636663711996617698,0,7764,1,"EPiServer.Framework.Initialization.InitializationEngine : Initialize action failed for 'Initialize on class Mediachase.Commerce.Initialization.CatalogInitialization, Mediachase.Commerce, Version=12.3.1.0, Culture=neutral, PublicKeyToken=6e58b501b34abce3'
+System.Data.SqlClient.SqlException (0x80131904): The server principal ""epiuser"" is not able to access the database ""Carpetright.Storefront.Commerce"" under the current security context.
+Cannot open database ""Carpetright.Storefront.Commerce"" requested by the login. The login failed.
+Login failed for user 'epiuser'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Mediachase.Data.Provider.TransactionScope.OpenConnection(IDbCommand cmd, String connectionString, ConnectionDelegate connectionFactory)
+   at Mediachase.Data.Provider.SqlDataProvider.LoadTable(DataCommand command)
+   at Mediachase.MetaDataPlus.Common.DBHelper.ExecuteDataTable(String connectionString, CommandType commandType, String commandText, Int32 commandTimeout, DataParameter[] commandParameters)
+   at Mediachase.MetaDataPlus.Configurator.MetaDataPlusDatabase.StoredProcedure.ExecuteDataTable(MetaDataContext context)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.LoadFromDb(MetaDataContext context, Func`2 dbLoader)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.ReadThroughCache(String cacheKey, MetaDataContext context, Func`2 dbLoader, Func`2 additionalCacheKeyCreator)
+   at Mediachase.Commerce.Catalog.DefaultCatalogMetaDataModule.ConfigureMetaData()
+   at Mediachase.Commerce.Catalog.DefaultCatalogMetaDataModule.EnsureDefaultMetaData()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+ClientConnectionId:c6be7d2a-049d-4a69-a1f3-76497ade8202
+Error Number:916,State:1,Class:14
+ClientConnectionId before routing:715cd940-3231-41be-849d-7ac4925959d6
+Routing Destination:a8fe3aacf1ee.tr4.northeurope1-a.worker.database.windows.net,11108",
+2018-07-05T07:07:47,Error,thle0507ui999inte,a38ce1,636663712674015521,0,7764,20,"EPiServer.Framework.Cache.ObjectInstanceCacheExtensions : Failed to Read cacheKey = 'EP:ECF:MC:N_CatalogEntry'
+System.Data.SqlClient.SqlException (0x80131904): The server principal ""epiuser"" is not able to access the database ""Carpetright.Storefront.Commerce"" under the current security context.
+Cannot open database ""Carpetright.Storefront.Commerce"" requested by the login. The login failed.
+Login failed for user 'epiuser'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Mediachase.Data.Provider.TransactionScope.OpenConnection(IDbCommand cmd, String connectionString, ConnectionDelegate connectionFactory)
+   at Mediachase.Data.Provider.SqlDataProvider.LoadTable(DataCommand command)
+   at Mediachase.MetaDataPlus.Common.DBHelper.ExecuteDataTable(String connectionString, CommandType commandType, String commandText, Int32 commandTimeout, DataParameter[] commandParameters)
+   at Mediachase.MetaDataPlus.Configurator.MetaDataPlusDatabase.StoredProcedure.ExecuteDataTable(MetaDataContext context)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.LoadFromDb(MetaDataContext context, Func`2 dbLoader)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+ClientConnectionId:2227cd87-c7e0-46b5-a068-61c2a9688968
+Error Number:916,State:1,Class:14
+ClientConnectionId before routing:30dcf1d2-ba78-4c1a-a83b-602d2d883baf
+Routing Destination:a8fe3aacf1ee.tr4.northeurope1-a.worker.database.windows.net,11108",
+2018-07-05T07:07:47,Error,thle0507ui999inte,a38ce1,636663712676515432,0,7764,20,"EPiServer.Framework.Initialization.InitializationEngine : Initialize action failed for 'Initialize on class Mediachase.Commerce.Initialization.CatalogInitialization, Mediachase.Commerce, Version=12.3.1.0, Culture=neutral, PublicKeyToken=6e58b501b34abce3'
+System.Data.SqlClient.SqlException (0x80131904): The server principal ""epiuser"" is not able to access the database ""Carpetright.Storefront.Commerce"" under the current security context.
+Cannot open database ""Carpetright.Storefront.Commerce"" requested by the login. The login failed.
+Login failed for user 'epiuser'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Mediachase.Data.Provider.TransactionScope.OpenConnection(IDbCommand cmd, String connectionString, ConnectionDelegate connectionFactory)
+   at Mediachase.Data.Provider.SqlDataProvider.LoadTable(DataCommand command)
+   at Mediachase.MetaDataPlus.Common.DBHelper.ExecuteDataTable(String connectionString, CommandType commandType, String commandText, Int32 commandTimeout, DataParameter[] commandParameters)
+   at Mediachase.MetaDataPlus.Configurator.MetaDataPlusDatabase.StoredProcedure.ExecuteDataTable(MetaDataContext context)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.LoadFromDb(MetaDataContext context, Func`2 dbLoader)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.ReadThroughCache(String cacheKey, MetaDataContext context, Func`2 dbLoader, Func`2 additionalCacheKeyCreator)
+   at Mediachase.Commerce.Catalog.DefaultCatalogMetaDataModule.ConfigureMetaData()
+   at Mediachase.Commerce.Catalog.DefaultCatalogMetaDataModule.EnsureDefaultMetaData()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+ClientConnectionId:2227cd87-c7e0-46b5-a068-61c2a9688968
+Error Number:916,State:1,Class:14
+ClientConnectionId before routing:30dcf1d2-ba78-4c1a-a83b-602d2d883baf
+Routing Destination:a8fe3aacf1ee.tr4.northeurope1-a.worker.database.windows.net,11108",
+2018-07-05T07:12:48,Error,thle0507ui999inte,a38ce1,636663715681874903,0,7764,20,"EPiServer.Framework.Cache.ObjectInstanceCacheExtensions : Failed to Read cacheKey = 'EP:ECF:MC:N_CatalogEntry'
+System.Data.SqlClient.SqlException (0x80131904): The server principal ""epiuser"" is not able to access the database ""Carpetright.Storefront.Commerce"" under the current security context.
+Cannot open database ""Carpetright.Storefront.Commerce"" requested by the login. The login failed.
+Login failed for user 'epiuser'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Mediachase.Data.Provider.TransactionScope.OpenConnection(IDbCommand cmd, String connectionString, ConnectionDelegate connectionFactory)
+   at Mediachase.Data.Provider.SqlDataProvider.LoadTable(DataCommand command)
+   at Mediachase.MetaDataPlus.Common.DBHelper.ExecuteDataTable(String connectionString, CommandType commandType, String commandText, Int32 commandTimeout, DataParameter[] commandParameters)
+   at Mediachase.MetaDataPlus.Configurator.MetaDataPlusDatabase.StoredProcedure.ExecuteDataTable(MetaDataContext context)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.LoadFromDb(MetaDataContext context, Func`2 dbLoader)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+ClientConnectionId:001b7fec-e505-427a-a364-b48a0eb8eea7
+Error Number:916,State:1,Class:14
+ClientConnectionId before routing:0ded29fe-f1cc-40dd-8fed-c36eb7183f9d
+Routing Destination:a8fe3aacf1ee.tr4.northeurope1-a.worker.database.windows.net,11108",
+2018-07-05T07:12:48,Error,thle0507ui999inte,a38ce1,636663715684062360,0,7764,20,"EPiServer.Framework.Initialization.InitializationEngine : Initialize action failed for 'Initialize on class Mediachase.Commerce.Initialization.CatalogInitialization, Mediachase.Commerce, Version=12.3.1.0, Culture=neutral, PublicKeyToken=6e58b501b34abce3'
+System.Data.SqlClient.SqlException (0x80131904): The server principal ""epiuser"" is not able to access the database ""Carpetright.Storefront.Commerce"" under the current security context.
+Cannot open database ""Carpetright.Storefront.Commerce"" requested by the login. The login failed.
+Login failed for user 'epiuser'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Mediachase.Data.Provider.TransactionScope.OpenConnection(IDbCommand cmd, String connectionString, ConnectionDelegate connectionFactory)
+   at Mediachase.Data.Provider.SqlDataProvider.LoadTable(DataCommand command)
+   at Mediachase.MetaDataPlus.Common.DBHelper.ExecuteDataTable(String connectionString, CommandType commandType, String commandText, Int32 commandTimeout, DataParameter[] commandParameters)
+   at Mediachase.MetaDataPlus.Configurator.MetaDataPlusDatabase.StoredProcedure.ExecuteDataTable(MetaDataContext context)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.LoadFromDb(MetaDataContext context, Func`2 dbLoader)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.ReadThroughCache(String cacheKey, MetaDataContext context, Func`2 dbLoader, Func`2 additionalCacheKeyCreator)
+   at Mediachase.Commerce.Catalog.DefaultCatalogMetaDataModule.ConfigureMetaData()
+   at Mediachase.Commerce.Catalog.DefaultCatalogMetaDataModule.EnsureDefaultMetaData()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+ClientConnectionId:001b7fec-e505-427a-a364-b48a0eb8eea7
+Error Number:916,State:1,Class:14
+ClientConnectionId before routing:0ded29fe-f1cc-40dd-8fed-c36eb7183f9d
+Routing Destination:a8fe3aacf1ee.tr4.northeurope1-a.worker.database.windows.net,11108",
+2018-07-05T07:16:30,Error,thle0507ui999inte,a38ce1,636663717901284638,0,7764,20,"EPiServer.Framework.Cache.ObjectInstanceCacheExtensions : Failed to Read cacheKey = 'EP:ECF:MC:N_CatalogEntry'
+System.Data.SqlClient.SqlException (0x80131904): The server principal ""epiuser"" is not able to access the database ""Carpetright.Storefront.Commerce"" under the current security context.
+Cannot open database ""Carpetright.Storefront.Commerce"" requested by the login. The login failed.
+Login failed for user 'epiuser'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Mediachase.Data.Provider.TransactionScope.OpenConnection(IDbCommand cmd, String connectionString, ConnectionDelegate connectionFactory)
+   at Mediachase.Data.Provider.SqlDataProvider.LoadTable(DataCommand command)
+   at Mediachase.MetaDataPlus.Common.DBHelper.ExecuteDataTable(String connectionString, CommandType commandType, String commandText, Int32 commandTimeout, DataParameter[] commandParameters)
+   at Mediachase.MetaDataPlus.Configurator.MetaDataPlusDatabase.StoredProcedure.ExecuteDataTable(MetaDataContext context)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.LoadFromDb(MetaDataContext context, Func`2 dbLoader)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+ClientConnectionId:c8726e8e-eb82-4638-bd9a-c35826dbac07
+Error Number:916,State:1,Class:14
+ClientConnectionId before routing:b7052fbd-f748-46ad-8b3c-ad8b1505a55c
+Routing Destination:a8fe3aacf1ee.tr4.northeurope1-a.worker.database.windows.net,11108",
+2018-07-05T07:16:30,Error,thle0507ui999inte,a38ce1,636663717903850970,0,7764,20,"EPiServer.Framework.Initialization.InitializationEngine : Initialize action failed for 'Initialize on class Mediachase.Commerce.Initialization.CatalogInitialization, Mediachase.Commerce, Version=12.3.1.0, Culture=neutral, PublicKeyToken=6e58b501b34abce3'
+System.Data.SqlClient.SqlException (0x80131904): The server principal ""epiuser"" is not able to access the database ""Carpetright.Storefront.Commerce"" under the current security context.
+Cannot open database ""Carpetright.Storefront.Commerce"" requested by the login. The login failed.
+Login failed for user 'epiuser'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Mediachase.Data.Provider.TransactionScope.OpenConnection(IDbCommand cmd, String connectionString, ConnectionDelegate connectionFactory)
+   at Mediachase.Data.Provider.SqlDataProvider.LoadTable(DataCommand command)
+   at Mediachase.MetaDataPlus.Common.DBHelper.ExecuteDataTable(String connectionString, CommandType commandType, String commandText, Int32 commandTimeout, DataParameter[] commandParameters)
+   at Mediachase.MetaDataPlus.Configurator.MetaDataPlusDatabase.StoredProcedure.ExecuteDataTable(MetaDataContext context)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.LoadFromDb(MetaDataContext context, Func`2 dbLoader)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.ReadThroughCache(String cacheKey, MetaDataContext context, Func`2 dbLoader, Func`2 additionalCacheKeyCreator)
+   at Mediachase.Commerce.Catalog.DefaultCatalogMetaDataModule.ConfigureMetaData()
+   at Mediachase.Commerce.Catalog.DefaultCatalogMetaDataModule.EnsureDefaultMetaData()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+ClientConnectionId:c8726e8e-eb82-4638-bd9a-c35826dbac07
+Error Number:916,State:1,Class:14
+ClientConnectionId before routing:b7052fbd-f748-46ad-8b3c-ad8b1505a55c
+Routing Destination:a8fe3aacf1ee.tr4.northeurope1-a.worker.database.windows.net,11108",
+2018-07-05T07:17:46,Error,thle0507ui999inte,a38ce1,636663718665631889,0,7764,20,"EPiServer.Framework.Cache.ObjectInstanceCacheExtensions : Failed to Read cacheKey = 'EP:ECF:MC:N_CatalogEntry'
+System.Data.SqlClient.SqlException (0x80131904): The server principal ""epiuser"" is not able to access the database ""Carpetright.Storefront.Commerce"" under the current security context.
+Cannot open database ""Carpetright.Storefront.Commerce"" requested by the login. The login failed.
+Login failed for user 'epiuser'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Mediachase.Data.Provider.TransactionScope.OpenConnection(IDbCommand cmd, String connectionString, ConnectionDelegate connectionFactory)
+   at Mediachase.Data.Provider.SqlDataProvider.LoadTable(DataCommand command)
+   at Mediachase.MetaDataPlus.Common.DBHelper.ExecuteDataTable(String connectionString, CommandType commandType, String commandText, Int32 commandTimeout, DataParameter[] commandParameters)
+   at Mediachase.MetaDataPlus.Configurator.MetaDataPlusDatabase.StoredProcedure.ExecuteDataTable(MetaDataContext context)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.LoadFromDb(MetaDataContext context, Func`2 dbLoader)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+ClientConnectionId:c5f1d3a4-9d96-4f95-9209-657166253cdd
+Error Number:916,State:1,Class:14
+ClientConnectionId before routing:d9a4987c-4c14-42b6-83b7-9c2b7f93c069
+Routing Destination:a8fe3aacf1ee.tr4.northeurope1-a.worker.database.windows.net,11108",
+2018-07-05T07:17:46,Error,thle0507ui999inte,a38ce1,636663718668444359,0,7764,20,"EPiServer.Framework.Initialization.InitializationEngine : Initialize action failed for 'Initialize on class Mediachase.Commerce.Initialization.CatalogInitialization, Mediachase.Commerce, Version=12.3.1.0, Culture=neutral, PublicKeyToken=6e58b501b34abce3'
+System.Data.SqlClient.SqlException (0x80131904): The server principal ""epiuser"" is not able to access the database ""Carpetright.Storefront.Commerce"" under the current security context.
+Cannot open database ""Carpetright.Storefront.Commerce"" requested by the login. The login failed.
+Login failed for user 'epiuser'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Mediachase.Data.Provider.TransactionScope.OpenConnection(IDbCommand cmd, String connectionString, ConnectionDelegate connectionFactory)
+   at Mediachase.Data.Provider.SqlDataProvider.LoadTable(DataCommand command)
+   at Mediachase.MetaDataPlus.Common.DBHelper.ExecuteDataTable(String connectionString, CommandType commandType, String commandText, Int32 commandTimeout, DataParameter[] commandParameters)
+   at Mediachase.MetaDataPlus.Configurator.MetaDataPlusDatabase.StoredProcedure.ExecuteDataTable(MetaDataContext context)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.LoadFromDb(MetaDataContext context, Func`2 dbLoader)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+   at Mediachase.MetaDataPlus.Configurator.MetaClass.ReadThroughCache(String cacheKey, MetaDataContext context, Func`2 dbLoader, Func`2 additionalCacheKeyCreator)
+   at Mediachase.Commerce.Catalog.DefaultCatalogMetaDataModule.ConfigureMetaData()
+   at Mediachase.Commerce.Catalog.DefaultCatalogMetaDataModule.EnsureDefaultMetaData()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+ClientConnectionId:c5f1d3a4-9d96-4f95-9209-657166253cdd
+Error Number:916,State:1,Class:14
+ClientConnectionId before routing:d9a4987c-4c14-42b6-83b7-9c2b7f93c069
+Routing Destination:a8fe3aacf1ee.tr4.northeurope1-a.worker.database.windows.net,11108",
