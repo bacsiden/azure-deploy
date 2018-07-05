@@ -1,8 +1,0 @@
-C:\Users\dkng\Documents\azure-deploy\AzureDeploy\AzureDeploy\bin\Debug\netcoreapp1.1\AzureDeploy.deps.json
-C:\Users\dkng\Documents\azure-deploy\AzureDeploy\AzureDeploy\bin\Debug\netcoreapp1.1\AzureDeploy.runtimeconfig.json
-C:\Users\dkng\Documents\azure-deploy\AzureDeploy\AzureDeploy\bin\Debug\netcoreapp1.1\AzureDeploy.runtimeconfig.dev.json
-C:\Users\dkng\Documents\azure-deploy\AzureDeploy\AzureDeploy\bin\Debug\netcoreapp1.1\AzureDeploy.dll
-C:\Users\dkng\Documents\azure-deploy\AzureDeploy\AzureDeploy\bin\Debug\netcoreapp1.1\AzureDeploy.pdb
-C:\Users\dkng\Documents\azure-deploy\AzureDeploy\AzureDeploy\obj\Debug\netcoreapp1.1\AzureDeploy.AssemblyInfo.cs
-C:\Users\dkng\Documents\azure-deploy\AzureDeploy\AzureDeploy\obj\Debug\netcoreapp1.1\AzureDeploy.dll
-C:\Users\dkng\Documents\azure-deploy\AzureDeploy\AzureDeploy\obj\Debug\netcoreapp1.1\AzureDeploy.pdb
